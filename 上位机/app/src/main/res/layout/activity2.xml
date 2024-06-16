@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/winsow_top"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                style="@style/shadow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F5F5F5"
+                android:gravity="center"
+                android:text="环境检测系统"
+                android:textSize="22sp"></TextView>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/window_1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/window_2">
+            <LinearLayout
+                android:layout_width="340dp"
+                android:layout_height="30dp"
+                android:id="@+id/img_JD"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    style="@style/shadow"
+                    android:textColor="@color/thistle"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="room"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"></TextView>
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_below="@id/img_JD"
+                android:layout_width="350dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="25dp">
+
+                        <LinearLayout
+                            android:id="@+id/blank1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/cornflowerblue"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="60dp"
+                                    android:layout_weight="3"
+                                    android:src="@drawable/fenshan"
+                                    android:tint="@color/lightblue"></ImageView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:textColor="@color/black"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:text="火灾预警灯"
+                                    android:textSize="18sp"></TextView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/switch_t1"
+                                    android:layout_width="50sp"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="关"
+                                    android:textSize="20dp">
+
+                                </TextView>
+
+                                <Switch
+                                    android:id="@+id/check1"
+                                    android:layout_width="60dp"
+                                    android:layout_height="50dp"
+                                    android:scaleX="1.5"
+                                    android:scaleY="1.5">
+
+                                </Switch>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"></LinearLayout>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="25dp">
+
+                        <LinearLayout
+                            android:id="@+id/blank2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/cornflowerblue"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="60dp"
+                                    android:layout_weight="3"
+                                    android:src="@drawable/keting"
+                                    android:tint="@color/lightblue"></ImageView>
+
+                                <TextView
+                                    android:textColor="@color/black"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:text="火灾警报灯"
+                                    android:textSize="18sp"></TextView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/switch_t2"
+                                    android:layout_width="50sp"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="关"
+                                    android:textSize="20dp">
+
+                                </TextView>
+
+                                <Switch
+                                    android:id="@+id/check2"
+                                    android:layout_width="60dp"
+                                    android:layout_height="50dp"
+                                    android:scaleX="1.5"
+                                    android:scaleY="1.5">
+
+                                </Switch>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/window_2"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/winsow_top"
+            android:layout_width="match_parent"
+            android:layout_height="310dp">
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="6dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="340dp"
+                android:layout_height="295dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_height="300dp">
+                    <LinearLayout
+                        android:id="@+id/clo1"
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="135dp"
+                        android:layout_marginTop="10dp">
+
+                        <LinearLayout
+                            android:layout_width="70dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="1dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:background="#000"
+                                android:scaleType="centerCrop"
+                                android:contentDescription="温度一"
+                                android:src="@drawable/temp1"></ImageView>
+
+                            <TextView
+                                android:id="@+id/data1"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="温度：20℃"
+                                android:textSize="12sp"
+                                android:contentDescription="温度">
+                            </TextView>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="70dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="25dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/solictemp"></ImageView>
+
+                            <TextView
+                                android:id="@+id/data2"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="湿度:50%"
+                                android:textSize="12sp"
+                                android:contentDescription="solid"></TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="70dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="25dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:scaleType="centerCrop"
+                                android:contentDescription="led"
+                                android:src="@drawable/led"></ImageView>
+
+                            <TextView
+                                android:id="@+id/data3"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="光照：40%"
+                                android:contentDescription="灯光"
+                                android:textSize="12sp"></TextView>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:gravity="center"
+                        android:layout_below="@+id/clo1">
+
+                        <LinearLayout
+                            android:layout_width="70dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:src="@drawable/mist"></ImageView>
+
+                            <TextView
+                                android:id="@+id/data4"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="烟雾:50%"
+                                android:textSize="12sp"></TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="70dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="25dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:src="@drawable/add"></ImageView>
+
+                            <TextView
+                                android:id="@+id/data5"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="待添加"
+                                android:textSize="12sp"></TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="70dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="25dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:src="@drawable/add"></ImageView>
+
+                            <TextView
+                                android:id="@+id/data6"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="待添加"
+                                android:textSize="12sp"></TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/window_1"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="-20dp"
+            android:layout_height="110dp">
+            <TextView
+                android:id="@+id/text"
+                style="@style/shadow"
+                android:textColor="@color/thistle"
+                android:gravity="center_vertical"
+                android:layout_marginTop="-5dp"
+                android:layout_width="340dp"
+                android:layout_centerHorizontal="true"
+                android:text="parameter"
+                android:textSize="16sp"
+                android:layout_height="30dp">
+            </TextView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/button_1"
+                android:layout_below="@+id/text"
+                android:layout_centerInParent="true"
+                app:cardCornerRadius="15dp"
+                android:layout_width="350dp"
+                android:layout_height="70dp">
+                <LinearLayout
+                    android:background="@color/cornflowerblue"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        style="@style/shadow"
+                        android:id="@+id/query"
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:text="参数设置"
+                        android:textColor="@color/linen"
+                        android:textSize="28sp"
+                        android:onClick="popupWindow"
+                        android:layout_height="match_parent">
+                    </TextView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+
+        <androidx.cardview.widget.CardView
+            app:cardElevation="6dp"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="60dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:src="@drawable/user"
+                            android:layout_height="40dp">
+                        </ImageView>
+                        <TextView
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:text="配置"
+                            android:layout_height="20dp"></TextView>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:src="@drawable/edit"
+                            android:layout_height="40dp">
+                        </ImageView>
+                        <TextView
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:text="主页"
+                            android:layout_height="20dp"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:src="@drawable/shezhi"
+                            android:layout_height="40dp">
+                        </ImageView>
+                        <TextView
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:text="设置"
+                            android:layout_height="20dp"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

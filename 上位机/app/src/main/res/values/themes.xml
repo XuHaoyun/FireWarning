@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Mqtt" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Mqtt" parent="Base.Theme.Mqtt" />
+    <style name="edit_pic">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">87dp</item>
+    </style>
+
+    <style name="edit_pic_left_1">
+        <item name="android:layout_width">170dp</item>
+        <item name="android:layout_height">87dp</item>
+    </style>
+    <style name="edit">
+        <item name="android:layout_height">87dp</item>
+    </style>
+    <style name="edit_pic_left_text">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginRight">-15dp</item>
+    </style>
+    
+    <style name="popwindowShow" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/popshow</item>
+        <item name="android:windowExitAnimation">@anim/popend</item>
+    </style>
+    <style name="shadow">
+        <item name="android:shadowColor">@color/thistle</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+</resources>
